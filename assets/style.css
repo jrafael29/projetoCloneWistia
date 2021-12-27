@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* body::-webkit-scrollbar{
+    width: 0.7rem;
+    background-color: rgba(0,0,0, 0.6);
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius:100px;
+    background-color: #1F68EF;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #1E64F0;
+}
+
+.cabecalho{
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho:hover{
+    background-color: #ffffff4b;
+    color: #000;
+}
+
+.cabecalho-logo-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.cabecalho-logo-texto{
+    color: #FFFFFF;
+    font-size: 22pt;
+    text-decoration: none;
+}
+
+.cabecalho-logo-texto:hover{
+    color: #1E64F0;
+}
+
+.cabecalho-logo{
+    height: 50px;
+}
+
+.cabecalho-menu{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+
+}
+
+.cabecalho-link{
+    text-decoration: none;
+}
+
+.cabecalho-link{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cabecalho-botao-area{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cabecalho-botao{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #37373C;
+}
+
+.cabecalho-botao:hover{
+    box-sizing: content-box;
+    border: none;
+    border-bottom: 5px solid #b9b9bb;
+    cursor: pointer;
+}
+
+.getstarted{
+    background-color: #1E64F0;
+
+    color: #FFFFFF;
+}
+
+.getstarted:hover{
+    border-bottom: 4px solid #174BD2;
+}
+
+.sessao-conteudo-principal{
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.conteudo-principal-texto{
+    width: 40%;
+    padding-left: 55px;
+    color: #FFFFFF;
+}
+
+.conteudo-texto-titulo{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.conteudo-texto-subtitulo{
+    font-size: 19pt;
+    font-weight: 100;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    word-spacing: 5px;
+    line-height: 35px;
+}
+
+.conteudo-principal-botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    gap: 20px;
+    padding: 20px 0 20px 0;
+    box-sizing: content-box;
+}
+
+.conteudo-texto-botao{
+    width: 250px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    color: #FA4FA0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.conteudo-texto-botao:hover{
+    box-sizing: content-box;
+    border: none;
+    border-bottom: 4px solid #D63280;
+    cursor: pointer;
+}
+
+.try{
+    background-color: #FA4FA0;
+    color: #FFFFFF !important;
+}
+
+.conteudo-imagem{
+    width: 600px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px #000;
+}
+
+.conteudo-imagem-area{
+    width: 60%;
+    padding-left: 100px;
+}
+
+.link-divisao{
+    text-decoration: none;
+}
+
+.link-divisorio{
+    background-color: #94EF66;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    align-items: center;
+    gap: 15px;
+    font-size: 22px;
+    color: #000;
+}
+.link-divisorio .p{
+    border-bottom: 2px solid #000;
+}
+
+.botao-link-divisorio{
+    background-color: #000;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.conteudo-secundario{
+    background-color: #FFFFFF;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    color: #0C0C0E;
+}
+
+.conteudo-secundario-texto{
+    height: 200px;
+    width: 65%;
+    font-size: 32px;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.conteudo-secundario-texto p{
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 40px;
+}
+.botao-secundario{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+
+}
+
+
+.botao-conteudo-secundario{
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    color: #1E64F0;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: #DEDEE1;
+}
+
+.botao-conteudo-secundario:hover{
+    box-sizing: content-box;
+    border-bottom: 4px solid #1E64F0;
+    cursor: pointer;
+}
+
+.conteudo-secundario-blocos-area{
+    padding-top: 50px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    gap: 10px;
+}
+
+.conteudo-secundario-blocos h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.conteudo-secundario-blocos p{
+    font-weight: 0;
+}
+
+.container-terciario{
+    height: 1100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+.conteudo-terciario{
+    height: 480px;
+    width: 1000px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 150px;
+}
+
+.conteudo-terciario-texto{
+    width: 90%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-terciario-texto p{
+    font-size: 26px;
+    word-spacing: 3px;
+    line-height: 40px;
+    margin-top: 25px;
+    font-weight: 0;
+}
+
+.conteudo-terciario-referencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    gap: 20px;
+}
+
+.conteudo-terciario-referencia h1{
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    padding: 15px 0 15px 0;
+}
+
+.conteudo-terciario-referencia p{
+    font-size: 20px;
+}
+
+.conteudo-terciario-referencia img{
+    width: 60px;
+    height: 60px;
+    border: 5px solid #1E64F0;
+    border-radius: 100px;
+}
+
+.conteudo-terciario-referencia-imagem{
+    margin-top: 20px;
+}
+
+.conteudo-quartario{
+    height: 380px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-quartario-blocos{
+    padding: 65px 0 200px 0;
+    display: flex;
+    gap: 80px;
+}
+
+.conteudo-quartario-titulo p{
+    font-size: 24px;
+}
+
+.conteudo-quartario-textos p{
+    font-size: 24px;
+    text-align: center;
+}
+
+.container-quartario{
+    height: 1000px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quinto-conteudo{
+    height: 444px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 110px;
+}
+
+.quinto-conteudo-links{
+    width: 340px;
+}
+
+.quinto-conteudo-links h2{
+    font-weight: 200;
+    padding: 20px 0 20px 0;
+}
+
+.quinto-conteudo-links p{
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.sexto-conteudo{
+    width: 100%;
+    height: 470px;
+    background-color: #1E64F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sexto-conteudo-botao{
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.sexto-conteudo-titulo h1{
+    font-size: 52px;
+    color: #FFFFFF;
+    font-weight: 200;
+}
+
+.sexto-conteudo-botao-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    gap: 20px;
+    padding: 20px 0 20px 0;
+    box-sizing: content-box;
+}
+.sexto-conteudo-botao{
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    color: #FA4FA7;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sexto-conteudo-botao:hover{
+    box-sizing: content-box;
+    border: none;
+    border-bottom: 4px solid #D63280;
+    cursor: pointer;
+}
+
+
+.rodape{
+    height: 800px;
+    background-color: #1F1F22;
+    padding: 80px 50px 80px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-imagem{
+    width: 250px;
+    padding: 0;
+    margin: 0;
+}
+
+.rodape-titulo{
+    color: #fff;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.rodape-rede-social{
+    display: flex;
+    gap: 122px;
+}
+
+.rodape-rede-social p{
+    color: #F8FFFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.rodape-titulo,
+.rodape-rede-social,
+.rodape-click-us{
+    padding-left: 15px;
+}
+
+.rodape-click-us{
+    margin-bottom: 100px;
+}
+
+.rodape-rede-social a{
+    color: #41d0a3;
+    text-decoration: none;
+}
+.rodape-rede-social a:hover{
+    color: #0EBB78;
+    text-decoration:underline ;
+}
+
+.virgula{
+    color: #fff;
+}
+
+.rodape-products{
+    padding-left: 29px;
+}
+
+.rodape-products ul,
+.rodape-series ul,
+.rodape-about ul,
+.rodape-learn ul,
+.rodape-support ul{
+    list-style: none;
+}
+
+.rodape-products li,
+.rodape-series li,
+.rodape-about li,
+.rodape-learn li,
+.rodape-support li{
+    margin-bottom: 15px;
+    color: #e4e4e4;
+}
+
+.rodape-products li:hover,
+.rodape-series li:hover,
+.rodape-about li:hover,
+.rodape-learn li:hover,
+.rodape-support li:hover{
+    color: white;
+}
+
+.rodape-titulos{
+    color: #A3A3AB !important; 
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+
+.start{
+    color: #209EFF !important;
+}
+
+.start:hover{
+    color: #1F68EF !important;
+}
+
+.view-all-series{
+    color: #d45a95 !important;
+}
+
+.view-all-series:hover{
+    color:#fa4fa0 !important;
+}
+
+.rodape-products a,
+.rodape-series a,
+.rodape-about a,
+.rodape-learn a,
+.rodape-support a{
+    text-decoration: none;
+
+}
+
+.rodape-conteudo-inferior{
+    display: flex;
+    gap: 45px;
+    margin-bottom: 70px;
+}
+
+.rodape-products,
+.rodape-series,
+.rodape-about,
+.rodape-learn,
+.rodape-support{
+    width: 176px;
+    max-height: 220px;
+}
+
+.rodape-privacy-terms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape-privacy-terms p{
+    color: #C4C4C8;
+    font-weight: 700;
+}
+
+.rodape-privacy-terms a{
+    color: #C4C4C8;
+}
+
+.rodape-privacy-terms a:hover{
+    color: #9AB9C8;
+}
